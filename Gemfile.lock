@@ -478,6 +478,7 @@ DEPENDENCIES
   counter_culture (~> 1.8)
   faker (= 2.1.2)
   fog (= 1.42)
+  fog-aws
   guard (= 2.16.2)
   guard-minitest (= 2.4.6)
   image_processing (= 1.9.3)
