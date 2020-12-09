@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
 gem 'image_processing',           '1.9.3'
+gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',                '4.9.5'
 gem 'active_storage_validations', '0.8.2'
 gem 'bcrypt',         '3.1.13'
@@ -43,6 +44,7 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
+  gem 'fog', '1.42'
 end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります

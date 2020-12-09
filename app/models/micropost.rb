@@ -4,6 +4,7 @@ class Micropost < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :iine_users, through: :likes, source: :user
   default_scope -> { order(created_at: :desc) }
+  mount_uploader :video, VideoUploader
   validates :user_id, presence: true
   validates :content, presence: true, length: { maximum: 140 }
   validates :image,   content_type: { in: %w[image/jpeg image/gif image/png],
@@ -30,4 +31,6 @@ class Micropost < ApplicationRecord
   def display_image
     image.variant(resize_to_limit: [500, 500])
   end
+  
+  
 end
