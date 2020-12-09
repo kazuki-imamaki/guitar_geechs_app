@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-if Rails.env.production?
-  CarrierWave.configure do |config|
-    config.fog_credentials = {
-      
-      :provider              => 'AWS',
-      :region                => ENV['AWS_REGION'],     
-      :aws_access_key_id     => ENV['AWS_ACCESS_KEY'],
-      :aws_secret_access_key => ENV['AWS_SECRET_KEY']
-    }
-    config.fog_directory     =  ENV['AWS_BUCKET']
-  end
-=======
 require 'carrierwave/storage/abstract'
 require 'carrierwave/storage/file'
 require 'carrierwave/storage/fog'
@@ -27,5 +14,4 @@ CarrierWave.configure do |config|
     path_style: true
   }
 
->>>>>>> video
 end
