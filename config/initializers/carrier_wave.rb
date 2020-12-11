@@ -1,13 +1,13 @@
 if Rails.env.production?
   CarrierWave.configure do |config|
-    config.fog_provider = 'fog/aws' #←ここを追記
+    config.fog_provider = 'fog/aws'
     config.fog_credentials = {
-      # Amazon S3用の設定
-      :provider              => 'AWS',
-      :region                => ENV['AWS_REGION'],     # 例: 'ap-northeast-1'
-      :aws_access_key_id     => ENV['AWS_ACCESS_KEY'],
-      :aws_secret_access_key => ENV['AWS_SECRET_KEY']
+      provider: 'AWS',
+      region: 'ap-northeast-1', # 問題箇所
+      aws_access_key_id: 'AKIAWHJRJMVZ7QEBZUYT',
+      aws_secret_access_key: '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'
     }
-    config.fog_directory     =  ENV['AWS_BUCKET']
+    config.fog_directory = 'imamaki-video'
+    config.cache_storage = :fog
   end
 end
