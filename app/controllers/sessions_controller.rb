@@ -26,4 +26,10 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     redirect_to root_url
   end
+  
+  def easy_login
+    user = User.find_by(email: "test@example.com")
+     log_in user#session_helperで事前に定義ずみ。
+     redirect_back_or user #session_helperで事前に定義ずみ。
+  end  
 end

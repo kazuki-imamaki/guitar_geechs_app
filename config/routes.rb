@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post   '/easy_login',   to: 'sessions#easy_login'
   get 'likes/create'
   get 'likes/destroy'
   get 'password_resets/new'

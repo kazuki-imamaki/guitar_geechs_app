@@ -19,6 +19,8 @@ User.create!(name:  "Kazuki Imamaki",
                activated_at: Time.zone.now)
 end
 
+
+
 # マイクロポスト
 users = User.order(:created_at).take(25)
 50.times do
