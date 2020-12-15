@@ -28,7 +28,7 @@ class SessionsController < ApplicationController
   end
   
   def easy_login
-    user = User.find_by(email: "test@example.com")
+    user = User.find_by(email: "test1@example.com")
      log_in user#session_helperで事前に定義ずみ。
      redirect_back_or user #session_helperで事前に定義ずみ。
   end  
