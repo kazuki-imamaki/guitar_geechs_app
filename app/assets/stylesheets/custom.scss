@@ -16,7 +16,9 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  margin:0;
 }
+
 
 section {
   overflow: auto;
@@ -30,7 +32,34 @@ textarea {
   text-align: center;
 h1 {
   margin-bottom: 10px;
+  color: #fff;
  } 
+}
+
+.jumbotron-extend {
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+    background: url(pexels-photo-1656066) no-repeat center center;
+    background-size: cover;
+    margin-top:-15px;
+    margin-right: -150px; 
+    margin-left: -150px;
+    margin-bottom:-40px;
+}
+
+.btn {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Avenir', serif;
+    outline:none
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    outline:none
 }
 /* typography */
 
@@ -43,6 +72,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  
 }
 
 h2 {
@@ -51,12 +81,14 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #fff;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  text-align: center;
+  margin-top:5px;
 }
 
 /* header */
