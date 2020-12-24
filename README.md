@@ -33,3 +33,4 @@ URL：https://guitar-share1234.herokuapp.com/
 * いいね機能
 * フォロー機能
 * ページネーション機能
+* レスポンシブデザイン
