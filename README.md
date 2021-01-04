@@ -2,7 +2,7 @@
 
 URL：https://guitar-share1234.herokuapp.com/
 
-<img width="1440" alt="スクリーンショット 2020-12-23 15 50 40" src="https://user-images.githubusercontent.com/68327357/102972465-6df51800-453e-11eb-9258-aad410031582.png">
+<img width="1440" alt="スクリーンショット 2021-01-05 0 12 43" src="https://user-images.githubusercontent.com/68327357/103549608-fedad480-4eea-11eb-9381-7d566c1fab8c.png">
 
 ホーム画面またはログイン画面のゲストユーザー用ログインボタンからログインいただきご利用ください。
 
