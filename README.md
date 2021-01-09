@@ -18,7 +18,7 @@ URL：https://guitar-share1234.herokuapp.com/
 * PostgreSQL
 * JavaScript (jQuery)
 * Bootstrap
-* AWS (cloud9,VPC,EC2,S3)
+* AWS (cloud9,S3)
 * Git, GitHub
 * Heroku
 * Mailgun
